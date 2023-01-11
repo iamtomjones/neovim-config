@@ -1,5 +1,6 @@
 
 vim.opt.guicursor = ""
+vim.opt.cursorline = true
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -11,7 +12,7 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
-vim.opt.wrap = false
+vim.opt.wrap = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -24,9 +25,13 @@ vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 
-vim.opt.scrolloff = 8
+vim.opt.clipboard:append("unnamedplus")
+
+vim.opt.scrolloff = 15
 vim.opt.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
+
+vim.opt.iskeyword:append("-")
 
 vim.opt.updatetime = 50
 

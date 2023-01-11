@@ -1,6 +1,7 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
 -- Only required if you have packer configured as `opt`
+
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
@@ -13,19 +14,23 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
-	  end
-  })
-  use('tinted-theming/base16-vim')
+  -- use({
+  --     'rose-pine/neovim',
+  --     as = 'rose-pine',
+  --     config = function()
+  --         vim.cmd('colorscheme rose-pine')
+  --     end
+  -- })
+  -- use('tinted-theming/base16-vim')
+  use 'bluz71/vim-nightfly-colors'
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+
+  use 'tpope/vim-surround'
+  use 'vim-scripts/ReplaceWithRegister'
 
   use('itchyny/lightline.vim')
 
@@ -56,4 +61,6 @@ return require('packer').startup(function(use)
   use ('preservim/nerdcommenter')
   use ('lewis6991/gitsigns.nvim')
   use {'neoclide/coc.nvim', branch = 'release'}
+
+  use {'ThePrimeagen/vim-be-good'}
   end)

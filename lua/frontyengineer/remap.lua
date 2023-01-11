@@ -54,3 +54,8 @@ vim.keymap.set("i", "<C-j>", "<Esc>:m .+1<CR>==gi")
 
 -- Open current file in browser
 vim.keymap.set("n", "<leader>o", "<cmd>!open %<CR>", { silent = true })
+
+-- increment and decrement numbers
+vim.keymap.set("n", "<leader>+", "<C-a>")
+vim.keymap.set("n", "<leader>-", "<C-x>")
+
