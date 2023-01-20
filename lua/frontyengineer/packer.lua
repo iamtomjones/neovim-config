@@ -63,4 +63,17 @@ return require('packer').startup(function(use)
   use {'neoclide/coc.nvim', branch = 'release'}
 
   use {'ThePrimeagen/vim-be-good'}
+
+  use  {'norcalli/nvim-colorizer.lua'}
+
+  use({
+      "roobert/tailwindcss-colorizer-cmp.nvim",
+      -- optionally, override the default options:
+      config = function()
+          require("tailwindcss-colorizer-cmp").setup({
+              color_square_width = 2,
+          })
+      end
+  })
+
   end)
