@@ -1,6 +1,6 @@
-
 vim.opt.guicursor = ""
 vim.opt.cursorline = true
+vim.opt.mouse = 'a'
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -36,3 +36,4 @@ vim.opt.iskeyword:append("-")
 vim.opt.updatetime = 50
 
 vim.opt.autoread = true
+

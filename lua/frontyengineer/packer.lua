@@ -14,15 +14,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  -- use({
-  --     'rose-pine/neovim',
-  --     as = 'rose-pine',
-  --     config = function()
-  --         vim.cmd('colorscheme rose-pine')
-  --     end
-  -- })
-  -- use('tinted-theming/base16-vim')
   use 'bluz71/vim-nightfly-colors'
+
 
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
@@ -62,8 +55,6 @@ return require('packer').startup(function(use)
   use ('lewis6991/gitsigns.nvim')
   use {'neoclide/coc.nvim', branch = 'release'}
 
-  use {'ThePrimeagen/vim-be-good'}
-
   use  {'norcalli/nvim-colorizer.lua'}
 
   use({
@@ -75,5 +66,12 @@ return require('packer').startup(function(use)
           })
       end
   })
+
+  use({
+      "iamcco/markdown-preview.nvim",
+      run = function() vim.fn["mkdp#util#install"]() end,
+  })
+
+  use 'ryanoasis/vim-devicons'
 
   end)
