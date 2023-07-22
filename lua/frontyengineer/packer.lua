@@ -74,4 +74,7 @@ return require('packer').startup(function(use)
 
   use 'ryanoasis/vim-devicons'
 
+  use 'mfussenegger/nvim-dap'
+
+  use 'theHamsta/nvim-dap-virtual-text';
   end)
