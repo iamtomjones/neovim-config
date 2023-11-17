@@ -17,7 +17,7 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- next item and center screen
 vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
+-- vim.keymap.set("n", "N", "Nzzzv")
 
 -- greatest remap ever
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -46,7 +46,8 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 -- vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 -- vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<S-p>", "<cmd>lua require('prettier').format()<CR>")
+vim.keymap.set("n", "<S-p>", ":bp<CR>")
+vim.keymap.set("n", "<S-n>", ":bn<CR>")
 
 -- Moving chunks of text
 vim.keymap.set("v", "<leader>j", ":m '>+1<CR>gv=gv")
