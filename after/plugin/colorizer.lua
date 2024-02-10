@@ -1,5 +1,5 @@
 require('colorizer').setup({
-    '*', -- Highlight all files, but customize some others.
+    -- '*', -- Highlight all files, but customize some others.
     css = { 
         rgb_fn = true; -- Enable parsing rgb(...) functions in css.
         hsl_fn = true; -- Enable parsing hsl(...) functions in css.

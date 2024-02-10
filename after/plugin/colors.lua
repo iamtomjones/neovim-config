@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-    color = color or "dracula"
+    color = color or "nightfox"
     vim.cmd.colorscheme(color)
     vim.api.nvim_set_hl(0, "Normal", {bg = "none"})
 
@@ -50,4 +50,4 @@ ColorMyPencils()
 -- })
 --
 -- setup must be called before loading
-vim.cmd("colorscheme dracula")
+vim.cmd("colorscheme nightfox")
