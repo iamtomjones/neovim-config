@@ -5,7 +5,7 @@ vim.keymap.set('n', '<leader>ps', function()
     builtin.grep_string({ search = vim.fn.input('Grep For > ') })
 end)
 vim.keymap.set('n', '<leader>ts', builtin.grep_string, {});
-
+vim.keymap.set('n', '<leader>td', builtin.diagnostics, {})
 
 local telescope = require('telescope')
 
