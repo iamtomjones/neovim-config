@@ -9,12 +9,11 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
-	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
   -- use 'bluz71/vim-nightfly-colors'
-  use "EdenEast/nightfox.nvim"
-  -- use('dracula/vim')
+  -- use "EdenEast/nightfox.nvim"
+  use('dracula/vim')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
@@ -64,7 +63,5 @@ return require('packer').startup(function(use)
   })
   use 'ryanoasis/vim-devicons'
   use "yuchanns/phpfmt.nvim"
-  -- Debugger 
-  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
 
   end)
