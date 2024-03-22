@@ -1,5 +1,5 @@
 vim.g.mapleader = " "
--- project vide
+-- project wide
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- move text up and down

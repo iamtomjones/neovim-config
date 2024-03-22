@@ -36,4 +36,3 @@ vim.opt.iskeyword:append("-")
 vim.opt.updatetime = 50
 
 vim.opt.autoread = true
-
