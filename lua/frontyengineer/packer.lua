@@ -63,5 +63,5 @@ return require('packer').startup(function(use)
     })
     use 'ryanoasis/vim-devicons'
     use "yuchanns/phpfmt.nvim"
-    use 'dbinagi/nomodoro'
+    use 'mfussenegger/nvim-dap'
 end)

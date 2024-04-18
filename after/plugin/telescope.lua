@@ -14,7 +14,6 @@ telescope.setup {
         layout_strategy = 'horizontal',
         layout_config = { height = 0.95 },
     },
-
     -- other configuration values here
     pickers = {
         find_files = {
