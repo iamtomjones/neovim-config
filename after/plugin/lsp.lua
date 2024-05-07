@@ -15,6 +15,13 @@ lsp_zero.on_attach(function(client, bufnr)
     vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+lsp_zero.set_sign_icons({
+    error = '⛔️',
+    warn = '⚠️',
+    hint = '💡',
+    info = 'ℹ️',
+})
+
 -- to learn how to use mason.nvim with lsp-zero
 -- read this: https://github.com/VonHeikemen/lsp-zero.nvim/blob/v3.x/doc/md/guides/integrate-with-mason-nvim.md
 require('mason').setup({})
@@ -35,6 +42,7 @@ local cmp_select = { behavior = cmp.SelectBehavior.Select }
 -- this is the function that loads the extra snippets to luasnip
 -- from rafamadriz/friendly-snippets
 require('luasnip.loaders.from_vscode').lazy_load()
+
 
 cmp.setup({
     sources = {

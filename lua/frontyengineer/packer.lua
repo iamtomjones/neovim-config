@@ -61,7 +61,5 @@ return require('packer').startup(function(use)
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,
     })
-    use 'ryanoasis/vim-devicons'
     use "yuchanns/phpfmt.nvim"
-    use 'mfussenegger/nvim-dap'
 end)
