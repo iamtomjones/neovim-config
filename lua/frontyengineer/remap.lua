@@ -55,3 +55,6 @@ vim.keymap.set("n", "<S-f>", ":0,$s/")
 
 -- open buffers
 vim.keymap.set("n", "<S-b>", ":Telescope buffers<CR>");
+
+-- open lazydocker 
+vim.keymap.set("n", "<leader>k", "<cmd>LazyDocker<CR>", { desc = "Toggle LazyDocker", noremap = true, silent = true })
