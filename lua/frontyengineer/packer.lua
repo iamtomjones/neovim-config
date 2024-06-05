@@ -67,4 +67,5 @@ return require('packer').startup(function(use)
             "MunifTanjim/nui.nvim",
         }
     })
+    use "3rd/time-tracker.nvim"
 end)
